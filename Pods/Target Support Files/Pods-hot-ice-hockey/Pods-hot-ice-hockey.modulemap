@@ -1,0 +1,6 @@
+framework module Pods_hot_ice_hockey {
+  umbrella header "Pods-hot-ice-hockey-umbrella.h"
+
+  export *
+  module * { export * }
+}
