@@ -18,11 +18,11 @@ class Club {
     ){
         
         id = _club["clubId"].stringValue.toInt()
-        points = _club["currentPoints"].stringValue.toInt()
+        points = _club["rank"].stringValue.toInt()
         name = _club["name"].stringValue
-        wins = _club["wins"].intValue
-        losses = _club["losses"].intValue
-        otl = _club["otl"].intValue
+        wins = _club["wins"].stringValue.toInt()
+        losses = _club["losses"].stringValue.toInt()
+        otl = _club["otl"].stringValue.toInt()
         division = _club["curDivision"].stringValue.toInt()
         
     }
@@ -82,9 +82,14 @@ class Match {
         timestamp = json["timestamp"].intValue
         timeAgo = json["timeAgo"].stringValue
         
+        var homeScore = ""
+        var awayScore = ""
+        
         for (key,val) in json["clubs"] {
             
             if id == key.toInt() {
+                
+                homeScore = val["score"].stringValue
                 
                 homeID = key.toInt()
                 homeName = val["details"]["name"].stringValue
@@ -100,7 +105,7 @@ class Match {
                 
             } else {
                 
-                score = val["scorestring"].stringValue
+                awayScore = val["score"].stringValue
                 
                 awayID = key.toInt()
                 awayName = val["details"]["name"].stringValue
@@ -115,6 +120,8 @@ class Match {
                 }
                 
             }
+            
+            score = "\(awayScore) - \(homeScore)"
             
         }
         

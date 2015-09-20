@@ -836,10 +836,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8td-r8-lO4">
-                                                    <rect key="frame" x="8" y="7" width="153" height="29"/>
+                                                    <rect key="frame" x="8" y="7" width="149" height="29"/>
                                                     <segments>
-                                                        <segment title="XBOX 360"/>
-                                                        <segment title="PS3"/>
+                                                        <segment title="Xbox One"/>
+                                                        <segment title="PS4"/>
                                                     </segments>
                                                     <connections>
                                                         <action selector="platformChanged:" destination="h4n-ki-FPv" eventType="valueChanged" id="ySw-bO-yDd"/>

@@ -56,7 +56,7 @@ class Top100CTRL: UITableViewController {
         cell.ptsTXT.text = club["rank"].stringValue
         cell.wTXT.text = club["wins"].stringValue
         cell.lTXT.text = club["losses"].stringValue
-        cell.otlTXT.text = club["ties"].stringValue
+        cell.otlTXT.text = club["otl"].stringValue
         
         return cell
         
@@ -76,7 +76,7 @@ class Top100CTRL: UITableViewController {
         c.id = club["clubId"].intValue
         c.wins = club["wins"].stringValue.toInt()
         c.losses = club["losses"].stringValue.toInt()
-        c.otl = club["ties"].stringValue.toInt()
+        c.otl = club["otl"].stringValue.toInt()
         c.division = 1
         c.teamID = club["teamId"].intValue
         c.points = club["rank"].stringValue.toInt()

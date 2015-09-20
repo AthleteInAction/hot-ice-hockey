@@ -8,7 +8,7 @@
 
 import UIKit
 
-var platforms: [String] = ["xbox","ps3"]
+var platforms: [String] = ["xboxone","ps4"]
 
 class MenuCTRL: UITableViewController {
 
