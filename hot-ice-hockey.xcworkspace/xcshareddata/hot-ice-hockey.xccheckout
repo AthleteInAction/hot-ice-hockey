@@ -10,31 +10,31 @@
 	<string>hot-ice-hockey</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B069BDA2DCB9FEBDA6C35D85F31E3229ED0702A2</key>
-		<string>https://github.com/onlyexcellence/projects.git</string>
+		<key>3F9AC8E97DCE51D8A028CC38A95AED0F33C1F4E0</key>
+		<string>github.com:onlyexcellence/hot-ice-hockey.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/hot-ice-hockey/hot-ice-hockey.xcworkspace</string>
+	<string>hot-ice-hockey.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B069BDA2DCB9FEBDA6C35D85F31E3229ED0702A2</key>
-		<string>../../..</string>
+		<key>3F9AC8E97DCE51D8A028CC38A95AED0F33C1F4E0</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/onlyexcellence/projects.git</string>
+	<string>github.com:onlyexcellence/hot-ice-hockey.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B069BDA2DCB9FEBDA6C35D85F31E3229ED0702A2</string>
+	<string>3F9AC8E97DCE51D8A028CC38A95AED0F33C1F4E0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B069BDA2DCB9FEBDA6C35D85F31E3229ED0702A2</string>
+			<string>3F9AC8E97DCE51D8A028CC38A95AED0F33C1F4E0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PNEW</string>
+			<string>hot-ice-hockey</string>
 		</dict>
 	</array>
 </dict>
