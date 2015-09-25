@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD68424D1BB58591007F4319 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD68424C1BB58591007F4319 /* GoogleService-Info.plist */; };
 		AD879A901B858AAB002C96CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD879A8F1B858AAB002C96CA /* Main.storyboard */; };
 		AD879A9E1B858AC6002C96CA /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD879A911B858AC6002C96CA /* Club.swift */; };
 		AD879A9F1B858AC6002C96CA /* ClubDetailCTRL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD879A921B858AC6002C96CA /* ClubDetailCTRL.swift */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0CA99C1971638EDB1EE3AF67 /* Pods-hot-ice-hockey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hot-ice-hockey.release.xcconfig"; path = "Pods/Target Support Files/Pods-hot-ice-hockey/Pods-hot-ice-hockey.release.xcconfig"; sourceTree = "<group>"; };
 		76D2CF6C610F961BBBBED9DE /* Pods_hot_ice_hockey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hot_ice_hockey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD68424C1BB58591007F4319 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD68424E1BB585DF007F4319 /* hot-ice-hockey-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hot-ice-hockey-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD879A8F1B858AAB002C96CA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD879A911B858AC6002C96CA /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
 		AD879A921B858AC6002C96CA /* ClubDetailCTRL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailCTRL.swift; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				ADD066DF1B85862A00C4D99D /* Info.plist */,
+				AD68424C1BB58591007F4319 /* GoogleService-Info.plist */,
+				AD68424E1BB585DF007F4319 /* hot-ice-hockey-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD879A901B858AAB002C96CA /* Main.storyboard in Resources */,
+				AD68424D1BB58591007F4319 /* GoogleService-Info.plist in Resources */,
 				ADD066EE1B85862A00C4D99D /* LaunchScreen.xib in Resources */,
 				ADD066EB1B85862A00C4D99D /* Images.xcassets in Resources */,
 			);
@@ -464,10 +470,13 @@
 			baseConfigurationReference = E680D4DB6087ADC4714CF215 /* Pods-hot-ice-hockey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hot-ice-hockey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hot-ice-hockey/hot-ice-hockey-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -476,10 +485,12 @@
 			baseConfigurationReference = 0CA99C1971638EDB1EE3AF67 /* Pods-hot-ice-hockey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "hot-ice-hockey/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hot-ice-hockey/hot-ice-hockey-Bridging-Header.h";
 			};
 			name = Release;
 		};

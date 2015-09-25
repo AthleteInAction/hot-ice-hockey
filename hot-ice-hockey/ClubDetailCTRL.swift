@@ -30,9 +30,13 @@ class ClubDetailCTRL: UITableViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         
+        var tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "ClubDetailCTRL")
         
+        var builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
         
     }
 
@@ -46,6 +50,11 @@ class ClubDetailCTRL: UITableViewController {
     func setData(){
         
         self.title = club.name
+        
+        var tracker = GAI.sharedInstance().defaultTracker
+        var builder = GAIDictionaryBuilder.createScreenView()
+        var event = GAIDictionaryBuilder.createEventWithCategory("API Requests", action: "GET", label: "Info", value: nil)
+        tracker.send(event.build() as [NSObject : AnyObject])
         
         let s = "https://www.easports.com/iframe/nhl14proclubs/api/platforms/\(platforms[Tools.rd()!])/clubs/\(club.id)/info"
         

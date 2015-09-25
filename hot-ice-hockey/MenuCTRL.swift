@@ -30,6 +30,16 @@ class MenuCTRL: UITableViewController {
         }
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        var tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "MenuCTRL")
+        
+        var builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

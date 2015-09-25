@@ -26,6 +26,16 @@ class ClubDetailRecentCTRL: UITableViewController {
         }
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        var tracker = GAI.sharedInstance().defaultTracker
+        tracker.set(kGAIScreenName, value: "ClubDetailRecentCTRL")
+        
+        var builder = GAIDictionaryBuilder.createScreenView()
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -80,6 +90,11 @@ class ClubDetailRecentCTRL: UITableViewController {
     func setData(){
         
         Loading.start()
+        
+        var tracker = GAI.sharedInstance().defaultTracker
+        var builder = GAIDictionaryBuilder.createScreenView()
+        var event = GAIDictionaryBuilder.createEventWithCategory("API Requests", action: "GET", label: "Recent", value: nil)
+        tracker.send(event.build() as [NSObject : AnyObject])
         
         let s = "https://www.easports.com/iframe/nhl14proclubs/api/platforms/\(platforms[Tools.rd()!])/clubs/\(club.id)/matches"
         
